@@ -17,7 +17,23 @@ let initialState = {
     title: 'test',
     desc: 'test desc',
     link: 'https://www.google.com',
-  }]
+  },
+  {
+    title: 'test2',
+    desc: 'test2 desc',
+    link: 'https://www.google.com',
+  },
+  {
+    title: 'test3',
+    desc: 'test3 desc',
+    link: 'https://www.google.com',
+  },
+  {
+    title: 'test4',
+    desc: 'test4 desc',
+    link: 'https://www.google.com',
+  },
+  ]
 };
 
 let store = createStore(rootReducer, initialState, composeEnhancers(middleware));
