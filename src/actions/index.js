@@ -1,7 +1,11 @@
-import { SEARCH } from './types';
+import { SEARCH, CLEAR } from './types';
 import axios from 'axios';
 
-// Figure out the redux thunk thing with ajax calls.
+export function clearResults() {
+  return {
+    type: CLEAR,
+  };
+}
 
 export function search(searchTerm) {
   return (dispatch) => {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Throttle } from 'react-throttle';
 import { connect } from 'react-redux';
-import { search } from '../actions/index';
+import { search, clearResults } from '../actions/index';
 
 class SearchBar extends Component {
     constructor(props) {
@@ -22,6 +22,9 @@ class SearchBar extends Component {
             this.setState({lastSearch: this.state.input});
         }
     }
+    handleClick() {
+        this.props.clearResults();
+    }
     render() {
         // Possibly put a throttle on input, too?
       return(
@@ -30,6 +33,7 @@ class SearchBar extends Component {
                   <form onSubmit={this.handleSearch.bind(this)}>
                     <input onChange={this.handleInputChange.bind(this)} />
                     <button type='submit'>Search</button>
+                    <button type='button' onClick={this.handleClick.bind(this)}>Clear</button>
                   </form>
               </Throttle>
           </div>
@@ -38,4 +42,4 @@ class SearchBar extends Component {
     // TODO: Don't forget to prevent default.
 }
 
-export default connect(null, { search })(SearchBar);
+export default connect(null, { search, clearResults })(SearchBar);
