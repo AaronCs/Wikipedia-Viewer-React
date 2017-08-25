@@ -28,15 +28,15 @@ class SearchBar extends Component {
     render() {
         // Possibly put a throttle on input, too?
       return(
-          <div>
-              <Throttle time='200' handler='onSubmit'>
-                  <form onSubmit={this.handleSearch.bind(this)}>
+        <Throttle time='200' handler='onSubmit'>
+            <form className='searchbar__form--center' onSubmit={this.handleSearch.bind(this)}>
+                <div className='searchbar__input--center'>
                     <input onChange={this.handleInputChange.bind(this)} />
                     <button type='submit'>Search</button>
                     <button type='button' onClick={this.handleClick.bind(this)}>Clear</button>
-                  </form>
-              </Throttle>
-          </div>
+                </div>
+            </form>
+        </Throttle>
       );
     }
     // TODO: Don't forget to prevent default.
