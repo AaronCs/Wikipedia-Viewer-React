@@ -1,0 +1,10 @@
+.searchbar__input--center {
+  display: inline-block;
+  //margin: 0 auto;
+}
+
+.searchbar__form--center {
+  // LOL, inline-block + text-align == center.
+  text-align: center;
+}
+
