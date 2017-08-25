@@ -14,8 +14,12 @@ class ResultsContainer extends Component {
           </div>
         );
       }
-      // TODO: Return a mapping.
+      // TODO: Limit description word limit.
       return this.props.searchResults.map( (data, i) => {
+          let maxLength = 50;
+          if(data.desc.length > maxLength) {
+            data.desc = data.desc.slice(0, maxLength + 1).concat('. . .');
+          }
           return <ResultsSingle key={i} title={data.title} link={data.link} desc={data.desc}/>;
       });
   }
