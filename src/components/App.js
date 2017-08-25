@@ -5,6 +5,11 @@ import ResultsContainer from './ResultsContainer';
 const App = () => {
   return(
     <div>
+      <header>
+        <a href="https://en.wikipedia.org">
+          <h1>Wikipedia Search Viewer</h1>
+        </a>
+      </header>
       <SearchBar />
       <ResultsContainer />
     </div>
