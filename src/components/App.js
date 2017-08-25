@@ -13,7 +13,7 @@ const App = () => {
       <div>
         <SearchBar />
       </div>
-      <div>
+      <div className='app__results'>
         <ResultsContainer/>
       </div>
     </div>
