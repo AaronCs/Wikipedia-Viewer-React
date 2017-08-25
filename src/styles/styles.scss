@@ -1,9 +1,15 @@
-@import './reset';
+@import './normalize.css';
 @import './vars';
+@import './app';
 @import './results';
 
 html,
 body {
-  height: 100%;
-  margin: 0;
+  //height: 100%;
+  //margin: 0;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
 }

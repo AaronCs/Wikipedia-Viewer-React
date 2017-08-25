@@ -21,7 +21,7 @@ class ResultsContainer extends Component {
   }
   render() {
     return(
-        <div>
+        <div className='results__container'>
           {this.getResults()}
         </div>
     );

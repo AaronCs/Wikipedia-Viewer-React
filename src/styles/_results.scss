@@ -1,5 +1,11 @@
-@import './vars';
+.results__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
-.results-single__link {
-  text-decoration: none;
+.results__single {
+  border: 1px solid $black;
+  // margin: 0 1rem;
+  padding: 1rem;
 }
