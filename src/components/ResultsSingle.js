@@ -2,8 +2,7 @@ import React from 'react';
 
 const ResultsSingle = ({ title, link, desc}) => {
   return(
-      <div>
-        <a className='results-single__link' href={link}>
+        <a className='results__single' href={link}>
           Single Result:
           <article>
             <header>
@@ -17,7 +16,6 @@ const ResultsSingle = ({ title, link, desc}) => {
             </section>
           </article>
         </a>
-      </div>
   );
 };
 

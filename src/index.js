@@ -30,7 +30,7 @@ let initialState = {
   },
   {
     title: 'test4',
-    desc: 'test4 desc',
+    desc: 'test4 desc LONG DESCLONG DESCLONG DESCLONG DESCLONG DESCLONG DESC test4 desc LONG DESCLONG DESCLONG DESCLONG DESCLONG DESCLONG DESC',
     link: 'https://www.google.com',
   },
   ]

@@ -1,0 +1,17 @@
+.searchbar__input--center {
+  display: inline-block;
+
+  @media (max-width: 425px) {
+    width: 300px;
+
+    input {
+      width: 155px;
+    }
+  }
+}
+
+.searchbar__form--center {
+  // LOL, inline-block + text-align == center.
+  text-align: center;
+}
+

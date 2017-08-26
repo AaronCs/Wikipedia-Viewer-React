@@ -1,9 +1,20 @@
-@import './reset';
+@import './normalize.css';
 @import './vars';
+@import './app';
 @import './results';
+@import './searchbar';
 
 html,
 body {
-  height: 100%;
-  margin: 0;
+  //height: 100%;
+  //margin: 0;
+  font-size: 16px;
+}
+
+body {
+  background-color: $background-color-1;
+}
+
+a {
+  text-decoration: none;
 }
