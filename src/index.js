@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
+import bulma from 'bulma/bulma.sass';
 import styles from './styles/styles.scss';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
