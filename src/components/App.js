@@ -4,16 +4,16 @@ import ResultsContainer from './ResultsContainer';
 
 const App = () => {
   return(
-    <div className='app__container'>
+    <div className=''>
       <header className='app__header--center'>
         <a href="https://en.wikipedia.org">
-          <h1>Wikipedia Search Viewer</h1>
+          <h1 className='title'>Wikipedia Search Viewer</h1>
         </a>
       </header>
-      <div>
+      <div className='section'>
         <SearchBar />
       </div>
-      <div className='app__results'>
+      <div className='section'>
         <ResultsContainer/>
       </div>
     </div>
