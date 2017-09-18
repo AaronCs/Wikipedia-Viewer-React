@@ -32,7 +32,7 @@ class SearchBar extends Component {
             <form onSubmit={this.handleSearch.bind(this)}>
                 <div className='field has-addons has-addons-centered'>
                     <div className='control'>
-                        <input className='input' onChange={this.handleInputChange.bind(this)} />
+                        <input placeholder='Search...' className='input' onChange={this.handleInputChange.bind(this)} />
                     </div>
                     <div className='field is-grouped'>
                         <div className='control'>
