@@ -15,7 +15,6 @@ class ResultsContainer extends Component {
         if(data.desc.length > maxLength) {
           data.desc = data.desc.slice(0, maxLength + 1).concat('. . .');
           return (
-            // TODO: This should be inside ResultsColumn.
             // Possible TODO: If description is longer than 500 words, make tile vertical?
           <div key={i} className={'tile is-parent'}>
             <ResultsSingle key={i} title={data.title} link={data.link} desc={data.desc}/>
@@ -68,7 +67,7 @@ class ResultsContainer extends Component {
   }
   render() {
     return(
-      <div className='container is-fluid'>
+      <div className='container'>
         {this.renderResults()}
       </div>
     );

@@ -1,24 +1,16 @@
 @import './vars';
-@import './app';
-@import './results';
 
-// TODO: Remove normalize.css, get Bulma imports to work.
-html,
-body {
-  //height: 100%;
-  //margin: 0;
-  font-size: 16px;
-}
+// TODO: Get Bulma imports to work.
 
 html {
+  font-size: 16px;
   height: 100%;
 }
 
 body {
-  background-color: $background-color-1;
   min-height: 100%;
 }
 
-a {
-  text-decoration: none;
+.results__container {
+  min-height: 500px;
 }
