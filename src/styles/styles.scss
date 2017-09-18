@@ -1,9 +1,8 @@
-@import './normalize.css';
 @import './vars';
 @import './app';
 @import './results';
-@import './searchbar';
 
+// TODO: Remove normalize.css, get Bulma imports to work.
 html,
 body {
   //height: 100%;
@@ -11,8 +10,13 @@ body {
   font-size: 16px;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: $background-color-1;
+  min-height: 100%;
 }
 
 a {

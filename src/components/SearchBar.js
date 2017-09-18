@@ -29,11 +29,19 @@ class SearchBar extends Component {
         // Possibly put a throttle on input, too?
       return(
         <Throttle time='200' handler='onSubmit'>
-            <form className='searchbar__form--center' onSubmit={this.handleSearch.bind(this)}>
-                <div className='searchbar__input--center'>
-                    <input onChange={this.handleInputChange.bind(this)} />
-                    <button type='submit'>Search</button>
-                    <button type='button' onClick={this.handleClick.bind(this)}>Clear</button>
+            <form onSubmit={this.handleSearch.bind(this)}>
+                <div className='field has-addons has-addons-centered'>
+                    <div className='control'>
+                        <input placeholder='Search...' className='input' onChange={this.handleInputChange.bind(this)} />
+                    </div>
+                    <div className='field is-grouped'>
+                        <div className='control'>
+                            <button type='submit' className='button'>Search</button>
+                        </div>
+                        <div className='control'>
+                            <button type='button' className='button is-danger' onClick={this.handleClick.bind(this)}>Clear</button>
+                        </div>
+                    </div>
                 </div>
             </form>
         </Throttle>

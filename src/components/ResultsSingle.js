@@ -1,11 +1,11 @@
 import React from 'react';
+// TODO: Possibly make the results into a modal viewing thing?
 
-const ResultsSingle = ({ title, link, desc}) => {
+const ResultsSingle = ({ title, link, desc, tileSize}) => {
   return(
-        <a className='results__single' href={link}>
-          Single Result:
+        <a className='tile is-child box' href={link}>
           <article>
-            <header>
+            <header className='title'>
               {title}
             </header>
             <section>
