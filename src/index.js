@@ -14,6 +14,7 @@ let composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 let middleware = applyMiddleware(thunk);
 
 let initialState = {
+  /*
   searchResults: [{
     title: 'test',
     desc: 'test desc',
@@ -35,6 +36,7 @@ let initialState = {
     link: 'https://www.google.com',
   },
   ]
+  */
 };
 
 let store = createStore(rootReducer, initialState, composeEnhancers(middleware));

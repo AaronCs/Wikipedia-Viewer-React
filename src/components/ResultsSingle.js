@@ -1,4 +1,5 @@
 import React from 'react';
+// TODO: Possibly make the results into a modal viewing thing?
 
 const ResultsSingle = ({ title, link, desc, tileSize}) => {
   return(

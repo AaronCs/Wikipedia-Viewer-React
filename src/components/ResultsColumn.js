@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-// TODO: Rows is for the number of columns.
+// TODO: Columns is for the number of singles displayed.
 
-class ResultsRow extends Component {
+class ResultsColumn extends Component {
   modifyChildren(el) {
     const className = `${el.props.className} ${this.props.otherChildClasses}`;
     const props = {
@@ -19,18 +19,13 @@ class ResultsRow extends Component {
     return this.props.elements;
   }
   render() {
-    const { otherParentClasses, elements, tileSizing } = this.props;
-    // 2nd layer controls the sizing.
+    const {otherParentClasses, elements } = this.props;
     return(
-      <div className='tile is-ancestor'>
-        <div className={`tile ${tileSizing}`}>
-          <div className={`tile is-parent ${otherParentClasses}`}>
-            {this.renderChildren()}
-          </div>
-        </div>
+      <div className={`tile is-parent ${otherParentClasses}`}>
+        {this.renderChildren()}
       </div>
     );
   }
 }
 
-export default ResultsRow;
+export default ResultsColumn;
