@@ -36,7 +36,7 @@ class SearchBar extends Component {
                     </div>
                     <div className='field is-grouped'>
                         <div className='control'>
-                            <button type='submit' className='button'>Search</button>
+                            <button type='submit' className='button is-primary'>Search</button>
                         </div>
                         <div className='control'>
                             <button type='button' className='button is-danger' onClick={this.handleClick.bind(this)}>Clear</button>

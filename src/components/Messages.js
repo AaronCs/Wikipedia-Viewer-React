@@ -16,7 +16,7 @@ class Messages extends Component {
   }
   renderMessage() {
     return (
-      <article className='message is-info'>
+      <article className='message is-primary column'>
         <div className='message-header'>
           <p>Important!</p>
           <button className='delete' aria-label='delete' onClick={this.handleClick.bind(this)}></button>
@@ -29,8 +29,12 @@ class Messages extends Component {
   }
   render() {
     return (
-      <div>
-        { this.state.hidden ? null : this.renderMessage() }
+      <div className='container'>
+        <div className='columns'>
+          <div className='column'></div>
+          { this.state.hidden ? null : this.renderMessage() }
+          <div className='column'></div>
+        </div>
       </div>
     );
   }
