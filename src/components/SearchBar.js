@@ -24,6 +24,7 @@ class SearchBar extends Component {
     }
     handleClick() {
         this.props.clearResults();
+        this.setState({lastSearch: ''});
     }
     render() {
         // Possibly put a throttle on input, too?
@@ -47,7 +48,6 @@ class SearchBar extends Component {
         </Throttle>
       );
     }
-    // TODO: Don't forget to prevent default.
 }
 
 export default connect(null, { search, clearResults })(SearchBar);

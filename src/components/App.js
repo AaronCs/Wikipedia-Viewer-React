@@ -1,7 +1,6 @@
 import React from 'react';
 import SearchBar from './SearchBar';
 import ResultsContainer from './ResultsContainer';
-import Messages from './Messages';
 
 const App = () => {
   return(
@@ -13,9 +12,6 @@ const App = () => {
       </header>
       <div className='section'>
         <SearchBar />
-      </div>
-      <div>
-        <Messages />
       </div>
       <div className='section results__container'>
         <ResultsContainer/>
